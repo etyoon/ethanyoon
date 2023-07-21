@@ -1,15 +1,81 @@
 <!DOCTYPE html>
- <html land = "en">
+<html>
     <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
         <title>Ethan Yoon</title>
+        <meta name = "description" content = "">
         <style>
-            
+            h2 {color:red}
+            p {color:blue}
         </style>
+        <!--tells us how to style a page-->
     </head>
     <body>
+        <h2>Hello World! Second Heading</h2>
+        <!--identifies a heading in one of six heading styles-->
         <p>
-            Hi, my name is Ethan Yoon. I am a third-year at the University of Chicago
-            majoring in Computer Science and Public Policy. Welcome to my website!
+            <b>This is the first line of a paragraph it is bolded</b>
+            <br /> <!--br is line break-->
+            <del>This is the second line of a paragraph, it is struckthrough</del>
+            <em>This is an emphasized sentence &amp;</em>
+            <sup>superscript</sup>
+            <i>&quot;this is an italisized sentence and its in quotes&quot;</i>
+            <sub>subscript</sub>
+            <u>this line is underlined</u>
+            <!--<code> is used for code -->
+            <!--&apos; is an appostrape, &lt; = less than &gt; = greater than, &nbsp; is a nobreaking space-->
+            <!--&hellip; = ellipses, &bull; = bulletpoint &trade; = trademark &copy; = copyright-->
         </p>
+        <p>
+            Click me to go to the next Page 
+            <br />
+            <a href = "page.html">
+                <img src = "Photo.jpg" alt="Picture of jai" width = "166" height = "190"/>
+                <!--alt is what is displayed if image can't be shown-->
+                <!--<a is an anchor that allows you to move to different page or differnet part of page-->
+                <!--if you dont want whole image to be a link then need to use mapping-->
+            </a>
+            <br />
+             <a href = "#Cats and Dogs">This</a> will take you to the description
+             <!--this links to a bookmark on the same page-->
+        </p>
+        <hr />
+        <!--hr / makes a horizontal line, this is a comment btw-->
+        <div>
+            <ul>
+                <li>bullet point in an unordered list</li>
+                <li> second bullet point in unordered list</li>
+            </ul>
+            <ol start = "3" reversed type = I>
+                <!--type 1 = numeric A = uppercase letters, a = lowercase letters-->
+                <!--type i = lowercase roman, I = uppercase roman-->
+                <li>This is third element in ordered and numbered list</li>
+                <li value = "5"> This is the 5th element in ordered and numbered list</li>
+                <li> This shoudl be the 6th element</li>
+                <!--reversed attribute reverses order-->
+                <!--start specifies staring value of the list number-->
+            </ol>
+        </div>
+        <!--div is used to apply special rules to groups of text like color-->
+        <pre> This line will be
+                    reproduced just as it
+                        i s     t y p e d 
+                        <!--shown in different style than rest-->
+        </pre>
+        <dl>
+            <a name = "Cats and Dogs">
+            <!--description list-->
+            <dt>Dog</dt></a>
+                <!--shown as indented left-->
+                <dd>Canine</dd>
+            <dt> Cat</dt>
+                <dd>feline</dd>
+
+        </dl>
+        <address>(773)-551-3189</address>
+        <!--used for contact info, creates italicized text-->
+        <blockquote cite="Source of the quote">Insert quote</blockquote>
     </body>
 </html>
+
