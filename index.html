@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ethan Yoon</title>
 </head>
-<title>Ethan Yoon</title>
+<style>
+    body {
+        background: maroon;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .btn-group button{
+        background-color: rgb(158, 158, 158);
+        border: 1px solid black;
+        color: black;
+        padding: 20px 24px;
+        cursor: pointer;
+        float: left;
+    }
+
+    .btn-group button:not(:last-child){
+        border-right: none;
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+    background-color: white;
+    }
+
+    h3 {
+        font-family: "Libre Franklin", serif;
+        color: white;
+        font-size: 72px;
+    }
+    h1 {
+        font-family: "Libre Franklin", serif;
+        color: white;
+        font-size: 72px;
+    }
+    .headertext {
+        position: absolute;
+        top: 40%;
+        right: 15%;
+    }
+
+    .atglance {
+        padding-bottom: 30px;
+    }
+    .description {
+        width: 70%;
+        padding-left: 160px;
+        padding-top: 15px;
+    }
+
+    footer {
+        height: 150px;
+        background: #B76E79;
+        text-align: center;
+    }
+</style>
 <body>
-    <h1>Hello!</h1>
-    <h2>My name is Ethan Yoon</h2>
+    <div class = 'btn-group'>
+        <button style="width:33.3%">Home</button>
+        <button style="width:33.3%">About Me</button>
+        <button style = "width:33.3%">Projects</button>
+    </div>
+    <div>
+        <img src="image001.jpg" width = 100% padding = 0 margin = 0>
+        <div class="headertext">
+            <h3>Hi there, I'm</h3>
+            <h1>Ethan Yoon</h1>
+        </div>
+    </div>
+    <div class="atglance">
+        <h4 class="description">At a Glance</h4>
+        <p class = "description">I am an undergraduate student at the University of Chciago majoring in 
+            Computer Science and Public Policy. I'm really interested in technology and
+            the way it will shape the lives of people, places and politics all around
+            the world. I was a part of the UChicago Socially Responsible Investing Group
+            and Moot Court and utilize and create applications I use in my day to day life
+            (see ChoreBot for more details).
+        </p>
+    </div>
+    <footer>
+        <br>
+        <h2>Contact Me</h2>
+        <h4>Email: emy1@uchicago.edu</h4>
+        <h4>LinkedIn: <a href="https://www.linkedin.com/in/ethanyoon/">https://www.linkedin.com/in/ethanyoon/</a></h4>
+    </footer>
 </body>
 </html>
