@@ -77,8 +77,8 @@
         <forma action = 'index.html'>
             <button style="width:33.3%">Home</button>
         </form>
-        <form href = '/ethanyoon/aboutMe.html'>
-            <button style="width:33.3%">About Me</button>
+        <form>
+            <button style="width:33.3%" id = 'AboutMe'>About Me</button>
         </form>
         <button style = "width:33.3%">Projects</button>
     </div>
@@ -107,4 +107,9 @@
         <h4>LinkedIn: <a href="https://www.linkedin.com/in/ethanyoon/">https://www.linkedin.com/in/ethanyoon/</a></h4>
     </footer>
 </body>
+<script type = 'text/javascript'>
+    document.getElementById('AboutMe').onclick = function() {
+        location.href = './aboutMe.html';
+    };
+</script>
 </html>
